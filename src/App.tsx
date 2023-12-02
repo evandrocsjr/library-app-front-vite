@@ -1,17 +1,9 @@
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Layout from "./components/Layout";
-import Dashboard from "./pages/Dashboard";
+import Router from "./pages/Router.tsx";
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<Dashboard/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Router/>
   )
 }
 
